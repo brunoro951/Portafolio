@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003C43;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    color: #96E9C6;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    gap: 10px;
+}
+
+.lista li {
+    display: inline;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.design {
+    color: #96E9C6;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.container-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.container-body div {
+    height: auto;
+    width: 800px;
+}
+
+.container-text {
+    max-width: auto;
+    width: 100%;
+}
+
+.container-text h1 {
+    font-size: 55px;
+    width: 100%;
+}
+
+.container-text p {
+    text-align: justify;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 500px;
+}
+
+.container-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    height: 900px;
+}
+
+.redes {
+    width: 30px;
+}
+
+.redes-text {
+    display: flex;
+    width: auto;
+    background-color: #003C43;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.container-about-me {
+    width: 100%;
+    height: auto;
+    background: #003C43;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-me {
+    width: 70%;
+    padding: 90px;
+}
+
+.about-me h1 {
+    padding: 20px;
+    color: #4CCD99;
+}
+
+.about-me p {
+    text-align: justify;
+    font-size: 17px;
+    color: #FFF2E1;
+}
+
+.container-skills,
+.container-Hobbies,
+.container-Fomacion,
+.container-experience,
+.container-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills,
+.Hobbies {
+    max-width: 50%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button-hobbies {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #003C43;
+    color: #003C43;
+    font-size: 15px;
+    padding: 20px;
+    gap: 10px;
+    width: 200px;
+    border-radius: 10px;
+    transition: color 0.5s ease, border 0.5s ease;
+}
+
+.formacion {
+    max-width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    transition: color 0.5s ease, border 0.5s ease;
+    border: 4px solid #003C43;
+    width: 300px;
+    height: auto;
+}
+
+.card-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: #003C43;
+}
+
+.card h3 {
+    text-align: center;
+    padding: 12px 2px 12px 2px;
+}
+
+
+.container-forms-content {
+    width: 70%;
+    display: flex;
+}
+
+.container-forms {
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+}
+
+input {
+    padding: 17px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #003C43;
+    margin-top: 100px;
+}
+
+.litle-footer {
+    text-align: center;
+    padding: 10px;
+    color: #4CCD99;
+}
+
+.column {
+    width: 50%;
+    max-width: 300px;
+    padding: 50px;
+    margin: 30px;
+    text-align: inherit;
+    color: #56937a;
+    box-sizing: border-box;
+}
+
+.card-experience h3:hover,
+.card:hover,
+button:hover {
+    color: #78bca0;
+    border: 4px solid #78bca0;
+}
+
+a:hover,
+.redes-text:hover {
+    color: #136624;
+}
+
+@media (max-width: 830px) {
+    .lista li:not(:last-child) {
+        display: none;
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .container-body {
+        width: 100%;
+        display: flex;
+        word-break: break-all;
+    }
+
+    .container-redes,
+    .container-text {
+        max-width: calc(100% - 10px);
+    }
+
+    .container-text h1 {
+        font-size: 23px;
+    }
+
+    .container-text p {
+        font-size: 10px;
+    }
+
+    .perfil {
+        display: none;
+    }
+
+    .about-me {
+        width: 100%;
+        padding: 13px;
+    }
+
+    .container-about-me p {
+        font-size: 15px;
+    }
+
+    .container-forms-content img {
+        display: none;
+
+    }
+
+
+    .rodapie__container {
+        justify-content: space-between;
+    }
+
+}
